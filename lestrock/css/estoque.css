@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e5b87e;
+    color: #8d0606;
+    padding: 20px;
+}
+
+/* Barra de navegação fixa e centralizada */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8d0606;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Lista de links centralizada */
+.nav-links {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Links */
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #c0392b;
+}
+
+.container {
+    background: #ebd0a4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #e5b87e;
+}
+
+th, td {
+    border: 2px solid #8d0606;
+    padding: 10px;
+    text-align: left;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background: #8d0606;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-importar {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-importar:hover {
+    background-color: #388e3c;
+}
+
+a {
+    text-decoration: none;
+    color: #8d0606;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ad4646;
+}
+
+.container-busca {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-pesquisa {
+    display: inline-block;
+}
+
+.form-pesquisa input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-pesquisa button {
+    padding: 8px 12px;
+    background-color: #8d0606;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e5b87e;
+    margin: 0;
+    padding: 0;
+    color: #8d0606;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ebd0a4;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #8d0606;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8d0606;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #8d0606;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #8d0606;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.btn-editar {
+    background-color: #8d0606;
+    color: #ebd0a4;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn-editar:hover {
+    background-color: #b43838;
+}
+
+.voltar-btn {
+    display: block;
+    text-align: center;
+    background-color: #7f8c8d;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.voltar-btn:hover {
+    background-color: #616a6b;
+}
+
+p[style="color: red;"] {
+    text-align: center;
+    font-weight: bold;
+}

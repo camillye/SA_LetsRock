@@ -1,0 +1,56 @@
+body {
+    background-color: #e5b87e;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #8d0606;
+    margin-top: 30px;
+  }
+  
+  #discos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .disco {
+    background-color: #f9e2c4;
+    border-radius: 12px;
+    width: 200px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+  }
+  
+  .disco:hover {
+    transform: scale(1.05);
+  }
+  
+  .disco img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .disco div {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .disco strong {
+    color: #8d0606;
+    font-size: 14px;
+  }
+  
+  .disco small {
+    color: #555;
+  }

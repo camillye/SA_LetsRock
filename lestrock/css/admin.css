@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e5b87e;
+    color: #8d0606;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ebd0a4;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 87, 34, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #8d0606;
+}
+
+p {
+    text-align: center;
+}
+.admin-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #8d0606;
+    border: 1px solid #e5b87e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #e5b87e;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.card:hover {
+    background-color: #661209;
+    transform: scale(1.03);
+}
+
+.logout-btn {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    background-color: #8d0606;
+    color: #e5b87e;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    width: 200px;
+    transition: background 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #661209;
+}

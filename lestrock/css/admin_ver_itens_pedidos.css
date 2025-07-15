@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebd0a4;
+    padding: 20px;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: #e5b87e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #8d0606;
+}
+h2 {
+    text-align: center;
+    color: #8d0606;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #8d0606;
+    text-align: center;
+}
+th {
+    background-color: #8d0606;
+    color: #e5b87e;
+}
+img {
+    width: 50px;
+    height: auto;
+    border-radius: 3px;
+}
+.pedido-box {
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed #8d0606;
+}
+.itens-title {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #8d0606;
+    font-weight: bold;
+}

@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ebd0a4;
+    color: #8d0606;
+}
+
+/* Cabeçalho */
+.topo {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #e7bb83;
+}
+
+.logo img {
+    height: 150px;
+    width: auto;
+    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* Animação do logo */
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/* Formulário de busca e ícones do topo */
+#form-busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+#busca {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+}
+
+#botao-buscar {
+    padding: 10px 20px;
+    background-color: #8d0606;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#botao-buscar:hover {
+    background-color: #661209;
+}
+
+#form-busca a {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#botao-carrinho img,
+#botao-configuracoes img,
+#botao-logout img,
+#botao-meuspedidos img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#botao-carrinho img:hover,
+#botao-configuracoes img:hover,
+#botao-logout img:hover,
+#botao-meuspedidos img:hover {
+    transform: scale(1.1);
+}
+
+/* Container principal dos detalhes */
+.detalhes-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #e5b87e;
+    border-radius: 16px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: #8d0606;
+}
+
+.detalhes-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #8d0606;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.detalhes-container img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 4px solid #8d0606;
+    border-radius: 12px;
+    max-width: 300px;
+    height: auto;
+}
+
+.badge-local {
+    background: #28a745;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.detalhes-container p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.detalhes-container strong {
+    color: #8d0606;
+}
+
+/* Botão adicionar ao carrinho */
+.botao-carrinho {
+    background-color: #8d0606;
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(141, 6, 6, 0.5);
+}
+
+.botao-carrinho:hover {
+    background-color: #600404;
+}
+
+/* Link voltar para catálogo */
+.detalhes-container a {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    background: #6c757d;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.detalhes-container a:hover {
+    background: #575757;
+}
+
+/* Footer */
+footer {
+    background-color: #e5b87e;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.footer-section p {
+    font-weight: bold;
+    color: #7b0000;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.footer-section a img.icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section a img.icon:hover {
+    transform: scale(1.1);
+}
+
+.footer-section .logo img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+}

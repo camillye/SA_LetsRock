@@ -1,0 +1,115 @@
+/* css/cadastrar_funcionario.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e5b87e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    margin-top: 50px;
+    color: #8d0606;
+}
+
+form {
+    background-color: #ebd0a4;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #8d0606;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #8d0606;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8d0606;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    background-color: #8d0606;
+    color: #ebd0a4;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ac2323;
+}
+
+p {
+    margin-top: 20px;
+    color: #8d0606;
+}
+
+a {
+    color: #8d0606;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Barra de navegação fixa e centralizada */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8d0606;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Lista de links centralizada */
+.nav-links {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Links */
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #c0392b;
+}

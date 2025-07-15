@@ -1,0 +1,328 @@
+/* Comprovante.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e5b87e;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container principal */
+.comprovante-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ebd0a4;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #8d0606;
+}
+
+/* Cabeçalho da loja */
+h1 {
+    text-align: center;
+    color: #8d0606;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #e5b87e;
+    padding-bottom: 15px;
+}
+
+/* Título do comprovante */
+h2 {
+    text-align: center;
+    color: #680808;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #e5b87e 0%, #d4a574 100%);
+    padding: 15px;
+    border-radius: 8px;
+    color: #8d0606;
+    font-weight: bold;
+}
+
+/* Seção de informações */
+.info {
+    background: #e5b87e;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-left: 5px solid #8d0606;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.info p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.info strong {
+    color: #8d0606;
+    font-weight: bold;
+}
+
+/* Tabela de itens */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: #e5b87e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background: linear-gradient(135deg, #8d0606 0%, #680808 100%);
+    color: #e5b87e;
+}
+
+th {
+    padding: 18px 15px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+/* Valor total */
+.total {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #8d0606;
+    background: linear-gradient(135deg, #e5b87e 0%, #d4a574 100%);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+    border: 2px solid #8d0606;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Botão de impressão */
+.btn-print {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn-print button {
+    background: linear-gradient(135deg, #8d0606 0%, #680808 100%);
+    color: #e5b87e;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    border: 2px solid #680808;
+}
+
+.btn-print button:hover {
+    background: linear-gradient(135deg, #680808 0%, #8d0606 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(141, 6, 6, 0.3);
+}
+
+/* Rodapé do comprovante */
+.comprovante-footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background: #e5b87e;
+    border-radius: 8px;
+    border-top: 2px solid #e5b87e;
+}
+
+.comprovante-footer p {
+    margin: 5px 0;
+    color: #680808;
+    font-size: 14px;
+}
+
+/* Estilo para impressão */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .comprovante-container {
+        box-shadow: none;
+        border: none;
+        padding: 20px;
+        margin: 0;
+    }
+    
+    .btn-print {
+        display: none;
+    }
+    
+    h1, h2 {
+        color: #000 !important;
+    }
+    
+    .info strong {
+        color: #000 !important;
+    }
+    
+    .total {
+        color: #000 !important;
+        background: #f0f0f0 !important;
+        border: 1px solid #000 !important;
+    }
+    
+    thead {
+        background: #f0f0f0 !important;
+        color: #000 !important;
+    }
+    
+    table {
+        border: 1px solid #000;
+    }
+    
+    th, td {
+        border: 1px solid #000;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .comprovante-container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .info {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    th, td {
+        padding: 12px 8px;
+    }
+    
+    .total {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .comprovante-container {
+        padding: 15px;
+        margin: 5px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+        letter-spacing: 1px;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+        padding: 12px;
+    }
+    
+    .info {
+        padding: 15px;
+    }
+    
+    .info p {
+        font-size: 14px;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 10px 6px;
+    }
+    
+    .total {
+        font-size: 1.3em;
+        padding: 12px;
+    }
+    
+    .btn-print button {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.comprovante-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Status badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-pago {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-pendente {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.status-cancelado {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}

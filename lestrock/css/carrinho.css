@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebd0a4;
+    margin: 0;
+    padding: 0;
+}
+
+header /*cabeçalho*/ {
+    height: 200px;
+    background-color: linear-gradient(135deg, #e5b87e 0%, #d4a574 100%);;
+  }
+  
+  header img /* imagem do cabeçalho */ {
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+  
+    @-webkit-keyframes scale-up-center {
+        0% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+      @keyframes scale-up-center {
+        0% {
+          -webkit-transform: scale(0.5);
+                  transform: scale(0.5);
+        }
+        100% {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+        }
+      }
+
+.carrinho-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #e5b87e;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.carrinho-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #8d0606;
+    padding-bottom: 10px;
+    color: #8d0606;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #8d0606;
+    padding: 15px 0;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 3px solid #8d0606;
+    object-fit: cover;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.quantidade-form {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantidade-form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.quantidade-form button,
+.item-info form button {
+    background-color: #8d0606;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.quantidade-form button:hover,
+.item-info form button:hover {
+    background-color: #661209;
+}
+
+.total {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #8d0606;
+    text-align: right;
+    font-weight: bold;
+}
+
+.finalizar-btn {
+    display: block;
+    margin: 30px auto 0;
+    background-color: #8d0606;
+    color: white;
+    font-size: 18px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.finalizar-btn:hover {
+    background-color: #661209;
+}
+
+.vazio {
+    text-align: center;
+    color: #8d0606;
+    font-size: 1.2em;
+    padding: 50px;
+}
+

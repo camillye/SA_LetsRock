@@ -1,0 +1,302 @@
+/* Reset e configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e5b87e 0%, #d4a574 100%);
+  min-height: 100vh;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header /*cabeçalho*/ {
+  height: 200px;
+  background-color: linear-gradient(135deg, #e5b87e 0%, #d4a574 100%);;
+}
+
+header img /* imagem do cabeçalho */ {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  @-webkit-keyframes scale-up-center {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+    @keyframes scale-up-center {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+
+
+
+/* Container principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ebd0a4;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #8d0606, #d11f1f, #8d0606);
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: #8d0606;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+/* Mensagens */
+.mensagem {
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.mensagem.sucesso {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.mensagem.erro {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Seções do formulário */
+.config-section {
+  margin-bottom: 35px;
+  padding: 25px;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  transition: box-shadow 0.3s ease;
+}
+
+.config-section:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.config-section h2 {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: #8d0606;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.config-section h2::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: #8d0606;
+  border-radius: 2px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+label {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.95em;
+  text-align: center;
+  display: block;
+}
+
+/* Campos de entrada */
+input, select, textarea {
+  padding: 12px 15px;
+  font-size: 14px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  background: #fff;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #8d0606;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(141, 6, 6, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Textarea específico */
+textarea {
+  resize: vertical;
+  min-height: 80px;
+  max-height: 150px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Campos de senha */
+input[type="password"] {
+  font-family: monospace;
+}
+
+/* Botões de ação */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid #e9ecef;
+}
+
+/* Botões */
+button {
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Botão salvar */
+button[name="salvar"] {
+  background: linear-gradient(135deg, #8d0606, #a50707);
+  min-width: 120px;
+}
+
+button[name="salvar"]:hover {
+  background: linear-gradient(135deg, #a50707, #c40808);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(141, 6, 6, 0.3);
+}
+
+/* Botão excluir */
+button.excluir {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  min-width: 120px;
+}
+
+button.excluir:hover {
+  background: linear-gradient(135deg, #c82333, #bd2130);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Efeito de click nos botões */
+button:active {
+  transform: translateY(0);
+}
+
+/* Estados dos campos */
+input:invalid {
+  border-color: #dc3545;
+}
+
+input:valid {
+  border-color: #28a745;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .container {
+    padding: 25px;
+    margin: 10px;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  .config-section {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  input, select, textarea {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+  
+  .config-section {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,364 @@
+body {
+  margin: 0 auto;
+  font-family: "Century Gothic", sans-serif;
+  background-color: #ebd0a4;
+}
+
+/*Anotação: pro float funcionar bonitinho,todos os elementos de uma linha tem que ter float*/
+/*Configurações gerais*/
+/*Cabeçalho*/
+
+
+header /*cabeçalho*/ {
+  height: 170px;
+  background: linear-gradient(to right, #e5b87e, #ebd0a4);
+}
+
+header img /* imagem do cabeçalho */ {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+              animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+  @-webkit-keyframes scale-up-center {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+    @keyframes scale-up-center {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+
+header h1 /* Texto do cabeçalho */{
+  float: left;
+  margin: 50px 0 0 30px;
+  font-size: 60px;
+  color: #8d0606;
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+  @-webkit-keyframes scale-up-center {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+    @keyframes scale-up-center {
+      0% {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+
+    #botao-configuracoes img {
+      width: 32px;
+      height: 32px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    #botao-configuracoes img:hover {
+      transform: scale(1.1);
+    }
+
+    #botao-configuracoes {
+      width: 40px;
+      height: 40px;
+      margin-left: 10px;
+      background-image: url('imgs/gmail.png');
+      background-size: 120px auto; /* Ajuste o valor conforme o tamanho real do sprite */
+      background-position: -80px 0; /* Posição do ícone de engrenagem na imagem */
+      background-repeat: no-repeat;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+    
+    #botao-configuracoes:hover {
+      transform: scale(1.1);
+    }
+
+    #botao-meuspedidos img {
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .topo {
+      display: flex;
+      align-items: center; /* Alinha verticalmente */
+      padding: 10px 50px;
+      background-color: #e7bb83; /* mesma cor do seu fundo */
+    }
+    
+    .logo img {
+      height: 150px; /* ou ajuste conforme seu logo */
+    }
+
+    #olauser {
+      color: #8d0606;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    
+    #olauser h3 {
+      margin: 0;
+    }
+    
+    
+    #form-busca {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+      flex-wrap: wrap;
+      width: fit-content;
+    }
+    
+    #busca {
+      padding: 10px;
+      font-size: 16px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      outline: none;
+    }
+    
+    #botao-buscar {
+      padding: 10px 20px;
+      background-color: #8d0606;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+    
+    #botao-buscar:hover {
+      background-color: #661209;
+    }
+    
+    /* Ajuste dos ícones ao lado do campo de busca */
+    #form-busca a {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+    }
+    
+    #botao-carrinho img,
+    #botao-configuracoes img,
+    #botao-logout img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s ease;
+    }
+    
+    #botao-carrinho img:hover,
+    #botao-configuracoes img:hover,
+    #botao-logout img:hover {
+      transform: scale(1.1);
+    }
+    
+    
+    
+
+
+    #discos {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      justify-content: center;
+      
+    }
+    
+    .discos1 {
+      text-decoration: none;
+      color: inherit;
+      border: 5px solid #8d0606;
+      border-radius: 10px;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* centraliza tudo */
+      align-items: center;
+      overflow: hidden;
+      box-sizing: border-box;
+      padding: 10px; /* agora volta um pouco de espaço interno */
+      background: #e5b87e;
+      transition: transform 0.2s, box-shadow 0.2s; /* efeito hover */
+    }
+
+    .disco {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .disco:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      animation: fade-in 0.3s ease-in-out;
+    }
+    
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    
+    
+    .disco img {
+      width: 80%;
+      height: auto;
+      max-height: 70%; /* garante espaço para o título */
+      object-fit: contain;
+      border-radius: 10px;
+      
+    }
+
+    .disco span {
+      margin-top: 5px;
+      font-size: 14px;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+    }
+    
+
+    body h1 {
+      color:#8d0606;
+      text-align: center;
+    }
+    
+
+
+    .produtos-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      justify-content: center;
+    }
+    
+    .produto {
+      border: 1px solid #8d0606;
+      border-radius: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      background: linear-gradient(to bottom left, #e5b87e, #e2cfaf);
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      color: #8d0606;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      animation: fadeInUp 0.4s ease;
+    }
+    
+    .produto:hover {
+      transform: scale(1.05);
+      box-shadow: 4px 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    
+    .produto img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background-color: #e5b87e;
+      padding: 20px 0;
+      text-align: center;
+    }
+    
+    .footer-logo {
+      margin-bottom: 30px;
+    }
+    
+    .footer-logo .logo {
+      width: 350px;
+      height: auto;
+    }
+    
+    
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .footer-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+    
+    .footer-section p {
+      font-weight: bold;
+      color: #7b0000;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+    
+    .icon {
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      transition: transform 0.5s ease;
+    }
+    
+    .icon:hover {
+      transform: scale(1.1);
+    }
+
+
+  

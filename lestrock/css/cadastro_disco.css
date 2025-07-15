@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5b87e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Barra de navegação fixa e centralizada */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8d0606;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Lista de links centralizada */
+.nav-links {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Links */
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #c0392b;
+}
+h1 {
+    color: #8d0606;
+    margin-top: 40px;
+    text-align: center;
+}
+
+form {
+    background: #ebd0a4;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #8d0606;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #8d0606;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #8d0606;
+    color: #ebd0a4;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #af3434;
+}
+
+table {
+    width: 95%;
+    max-width: 1100px;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin-bottom: 60px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+img {
+    max-height: 60px;
+    border-radius: 6px;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    color: green;
+}

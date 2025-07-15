@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    min-height: 100vh; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e5b87e;
+    color: #8d0606;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column; 
+    text-align: center;   
+}
+
+
+form {
+    background: #ebd0a4;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px #8d0606;
+    border-radius: 6px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+h1, .mensagem, .erro, a {
+    text-align: center;
+}
+
+a {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #8d0606;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
